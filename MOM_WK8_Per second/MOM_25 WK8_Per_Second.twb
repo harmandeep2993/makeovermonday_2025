@@ -1,0 +1,2245 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0613.1930                               -->
+<workbook original-version='18.1' source-build='2024.2.0 (20242.24.0613.1930)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='PerSecondWeSurrondedbyfrequenciesMakeoverMonday2025WK8' path='/workbooks' revision='1.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='Professional Blue' type='ordered-sequential'>
+      <color>#e3f2fd</color>
+      <color>#bbdefb</color>
+      <color>#90caf9</color>
+      <color>#64b5f6</color>
+      <color>#42a5f5</color>
+      <color>#2196f3</color>
+      <color>#1e88e5</color>
+      <color>#1976d2</color>
+      <color>#1565c0</color>
+      <color>#0d47a1</color>
+    </color-palette>
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Inner Circle' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='7.'>
+        <calculation class='tableau' formula='7.' />
+      </column>
+      <column caption='Outer Circle' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='15.'>
+        <calculation class='tableau' formula='15.' />
+      </column>
+    </datasource>
+    <datasource caption='simple list+ (Per Second)' inline='true' name='federated.1hqkpdx0anwviv1awrjo10e54e8g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Per Second' name='excel-direct.1isw03s14pp5x810oguew1bhs46j'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Tableau_Projects/#MOM 2025/#MOM2025_WK8(Per second)/Per Second.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='simple list+' type='union'>
+          <columns header='yes'>
+            <column datatype='string' name='Frequency Magnitude' />
+            <column datatype='string' name='Vibrations / cycles / waves / rate per second (formatted)' />
+            <column datatype='real' name='Frequency Value (Hz)' />
+            <column datatype='string' name='Description' />
+            <column datatype='string' name='Frequency Statistic Measure' />
+            <column datatype='string' name='Source' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.1isw03s14pp5x810oguew1bhs46j' name='simple list' table='[&apos;simple list$&apos;]' type='table'>
+            <columns gridOrigin='A1:F51:no:A1:F51:0' header='yes' outcome='2'>
+              <column datatype='string' name='Frequency Magnitude' ordinal='0' />
+              <column datatype='string' name='Vibrations / cycles / waves / rate per second (formatted)' ordinal='1' />
+              <column datatype='real' name='Frequency Value (Hz)' ordinal='2' />
+              <column datatype='string' name='Description' ordinal='3' />
+              <column datatype='string' name='Frequency Statistic Measure' ordinal='4' />
+              <column datatype='string' name='Source' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1isw03s14pp5x810oguew1bhs46j' name='simple list1' table='[&apos;simple list$&apos;]' type='table'>
+            <columns gridOrigin='A1:F51:no:A1:F51:0' header='yes' outcome='2'>
+              <column datatype='string' name='Frequency Magnitude' ordinal='0' />
+              <column datatype='string' name='Vibrations / cycles / waves / rate per second (formatted)' ordinal='1' />
+              <column datatype='real' name='Frequency Value (Hz)' ordinal='2' />
+              <column datatype='string' name='Description' ordinal='3' />
+              <column datatype='string' name='Frequency Statistic Measure' ordinal='4' />
+              <column datatype='string' name='Source' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='simple list+' type='union'>
+          <columns header='yes'>
+            <column datatype='string' name='Frequency Magnitude' />
+            <column datatype='string' name='Vibrations / cycles / waves / rate per second (formatted)' />
+            <column datatype='real' name='Frequency Value (Hz)' />
+            <column datatype='string' name='Description' />
+            <column datatype='string' name='Frequency Statistic Measure' />
+            <column datatype='string' name='Source' />
+            <column datatype='string' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.1isw03s14pp5x810oguew1bhs46j' name='simple list' table='[&apos;simple list$&apos;]' type='table'>
+            <columns gridOrigin='A1:F51:no:A1:F51:0' header='yes' outcome='2'>
+              <column datatype='string' name='Frequency Magnitude' ordinal='0' />
+              <column datatype='string' name='Vibrations / cycles / waves / rate per second (formatted)' ordinal='1' />
+              <column datatype='real' name='Frequency Value (Hz)' ordinal='2' />
+              <column datatype='string' name='Description' ordinal='3' />
+              <column datatype='string' name='Frequency Statistic Measure' ordinal='4' />
+              <column datatype='string' name='Source' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1isw03s14pp5x810oguew1bhs46j' name='simple list1' table='[&apos;simple list$&apos;]' type='table'>
+            <columns gridOrigin='A1:F51:no:A1:F51:0' header='yes' outcome='2'>
+              <column datatype='string' name='Frequency Magnitude' ordinal='0' />
+              <column datatype='string' name='Vibrations / cycles / waves / rate per second (formatted)' ordinal='1' />
+              <column datatype='real' name='Frequency Value (Hz)' ordinal='2' />
+              <column datatype='string' name='Description' ordinal='3' />
+              <column datatype='string' name='Frequency Statistic Measure' ordinal='4' />
+              <column datatype='string' name='Source' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[simple list+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frequency Magnitude</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Frequency Magnitude]</local-name>
+            <parent-name>[simple list+]</parent-name>
+            <remote-alias>Frequency Magnitude</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vibrations / cycles / waves / rate per second (formatted)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vibrations / cycles / waves / rate per second (formatted)]</local-name>
+            <parent-name>[simple list+]</parent-name>
+            <remote-alias>Vibrations / cycles / waves / rate per second (formatted)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frequency Value (Hz)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Frequency Value (Hz)]</local-name>
+            <parent-name>[simple list+]</parent-name>
+            <remote-alias>Frequency Value (Hz)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[simple list+]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frequency Statistic Measure</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Frequency Statistic Measure]</local-name>
+            <parent-name>[simple list+]</parent-name>
+            <remote-alias>Frequency Statistic Measure</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Source]</local-name>
+            <parent-name>[simple list+]</parent-name>
+            <remote-alias>Source</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[simple list+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[simple list+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cf_rad normalised_R.stp 3' datatype='real' name='[Calculation_2752543846843867136]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1] + IIF(&#13;&#10;    ATTR([Calculation_830069755841589254]) = 0, &#13;&#10;    0,(SUM([Calculation_830069755858366474]) / WINDOW_MAX(SUM([Calculation_830069755858366474]))) * ([Parameters].[Parameter 2] - [Parameters].[Parameter 1])&#13;&#10;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='cf_radial X' datatype='real' name='[Calculation_2752543846844448769]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_2752543846843867136]*COS([Calculation_830069755639271426])'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='cf_frequency cat.' datatype='string' name='[Calculation_2752543846918864902]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([Description], &quot;Heart Rate&quot;) OR &#13;&#10;   CONTAINS([Description], &quot;Brain Waves&quot;) OR &#13;&#10;   CONTAINS([Description], &quot;Purr&quot;) OR &#13;&#10;   CONTAINS([Description], &quot;Human Hearing&quot;) OR&#13;&#10;   CONTAINS([Description], &quot;Dog&quot;) OR&#13;&#10;   CONTAINS([Description], &quot;Human Brain&quot;) OR&#13;&#10;   CONTAINS([Description], &quot;Speech&quot;) THEN &apos;Biological Frequencies&apos;&#13;&#10;   &#13;&#10;ELSEIF CONTAINS([Description], &quot;Frame Rate&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Music&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Power&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Bass&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Subwoofer&quot;) THEN &apos;Audio &amp; Power Frequencies&apos;&#13;&#10;   &#13;&#10;ELSEIF CONTAINS([Description], &quot;Bass&quot;) THEN &apos;Low Audio Frequencies&apos;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Music&quot;) OR CONTAINS([Description], &quot;Frame Rate&quot;) THEN &apos;High Audio Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;X-ray&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Gamma Rays&quot;) THEN &apos;Radiation Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Ultrasound&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;RFID&quot;) THEN &apos;Ultrasound Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Cosmic&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Wow Signal&quot;) THEN &apos;Cosmic Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;TV&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Broadcast&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Monitor&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;AM&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;FM&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Radio&quot;) THEN &apos;Broadcasting Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Microwave&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Bluetooth&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Wifi&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Wi-Fi&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;3G&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;4G&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;5G&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Air Traffic Control Radar&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;GPS&quot;) THEN &apos;Communication Frequencies&apos;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Infrared&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;UV&quot;) THEN &apos;Infrared / UV Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Visible&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Red&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Orange&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Yellow&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Green&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Cyan&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Blue&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Violet&quot;) THEN &apos;Visible Frequencies&apos;&#13;&#10;&#13;&#10;ELSE &apos;Other&apos;&#13;&#10;END' />
+      </column>
+      <column caption='cf_radial angle(rad)' datatype='real' name='[Calculation_830069755639271426]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='((INDEX() - 1) * (2 * PI()) / WINDOW_COUNT(COUNT([Calculation_830069755858366474])))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='cf_safety classification' datatype='string' name='[Calculation_830069755645992965]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_2752543846918864902] = &apos;Biological Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Audio &amp; Power Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Low Audio Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;High Audio Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Radiation Frequencies&apos; THEN &apos;Very High-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Ultrasound Frequencies&apos; THEN &apos;Moderate-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Cosmic Frequencies&apos; THEN &apos;Very High-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Broadcasting Frequencies&apos; THEN &apos;Moderate-Risk&apos;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Communication Frequencies&apos; THEN &apos;Moderate-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Infrared / UV Frequencies&apos; THEN &apos;High-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Visible Frequencies&apos; THEN &apos;High-Risk&apos;&#13;&#10;&#13;&#10;ELSE &apos;Other&apos;&#13;&#10;END' />
+      </column>
+      <column aggregation='Sum' caption='cf_path order_R.stp1' datatype='integer' name='[Calculation_830069755841589254]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IIF([Table Name]=&quot;simple list&quot;, 0,1)' />
+      </column>
+      <column caption='cf_log_scale' datatype='real' name='[Calculation_830069755845791752]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='LOG([Frequency Value (Hz)],10)' />
+      </column>
+      <column caption='cf_radial field_R.stp2' datatype='real' name='[Calculation_830069755858366474]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_830069755845791752]' />
+      </column>
+      <column datatype='string' name='[Description]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='simple list' datatype='table' name='[__tableau_internal_object_id__].[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]' role='measure' type='quantitative' />
+      <column caption='cf-radial Y' datatype='real' name='[cf-radial X (copy)_2752543846844600322]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_2752543846843867136]*SIN([Calculation_830069755639271426])'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column-instance column='[Description]' derivation='None' name='[none:Description:nk]' pivot='key' type='nominal' />
+      <group caption='Action (cf_frequency cat.)' hidden='true' name='[Action (cf_frequency cat.)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_2752543846918864902]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (cf_safety classification)' hidden='true' name='[Action (cf_safety classification)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_830069755645992965]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (cf_path order_R.stp1,Description)' hidden='true' name='[Tooltip (cf_path order_R.stp1,Description)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_830069755841589254]' />
+          <groupfilter function='level-members' level='[Description]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='D:/Tableau_Projects/#MOM 2025/#MOM2025_WK8(Per second)/simple list+ (Per Second).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/23/2025 12:11:13 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='simple list+ (Per Second)' increment-value='%null%' refresh-type='create' rows-inserted='100' timestamp-start='2025-02-23 00:11:13.139' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Frequency Magnitude</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Frequency Magnitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Frequency Magnitude</remote-alias>
+              <ordinal>0</ordinal>
+              <family>simple list+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vibrations / cycles / waves / rate per second (formatted)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vibrations / cycles / waves / rate per second (formatted)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vibrations / cycles / waves / rate per second (formatted)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>simple list+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Frequency Value (Hz)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Frequency Value (Hz)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Frequency Value (Hz)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>simple list+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>3</ordinal>
+              <family>simple list+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Frequency Statistic Measure</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Frequency Statistic Measure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Frequency Statistic Measure</remote-alias>
+              <ordinal>4</ordinal>
+              <family>simple list+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Source]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Source</remote-alias>
+              <ordinal>5</ordinal>
+              <family>simple list+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sheet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sheet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sheet</remote-alias>
+              <ordinal>6</ordinal>
+              <family>simple list+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>7</ordinal>
+              <family>simple list+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[simple list_E9999DC6AAA649C6B3DDA0C235897F7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Description:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Beta Brain Waves&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Long wave AM radio&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;X-rays&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; AC power (USA)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;GPS&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;UV-A (Ages your Skin)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;5G (Mid Band)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Human Hearing Upper Limit (Under 24 Yrs)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Violet&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Conscious Human Brain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Music Note &apos;A&apos;&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Blue&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Microwave Oven&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Yellow&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AC Power (World)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Human Heart Rate Rest&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Visible Light (Start)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Gamma Brain Waves&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ultrasound Scanner&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;3G&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Green&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;UV-B (Burns you Skin)&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Dog Upper hearing Limit&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Subwoofer Bass Speaker&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Air Traffic Control Radar&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Human Speech&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Wifi&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cosmic Microwave Background Radiation&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Orange&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cyan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Red&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;FM radio&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;TV Broadcasting&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gamma Rays&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ultraviolet light (UV)&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bluetooth&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Microwaves&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Alpha Brain Waves&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Infrared light&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Wow Signal&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;4G&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Human Hearing Lower Limit&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;UVC&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Digital Music Sampling Rate&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;RFIDs&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cat&apos;s Purr&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Monitors (Baby)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;5G (High Band)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Human Hearing Upper Limit&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Vedio Frame Rate&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Inner Circle' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='7.'>
+          <calculation class='tableau' formula='7.' />
+        </column>
+        <column caption='Outer Circle' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='15.'>
+          <calculation class='tableau' formula='15.' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='simple list' id='simple list_E9999DC6AAA649C6B3DDA0C235897F7E'>
+            <properties context=''>
+              <relation all='true' name='simple list+' type='union'>
+                <columns header='yes'>
+                  <column datatype='string' name='Frequency Magnitude' />
+                  <column datatype='string' name='Vibrations / cycles / waves / rate per second (formatted)' />
+                  <column datatype='real' name='Frequency Value (Hz)' />
+                  <column datatype='string' name='Description' />
+                  <column datatype='string' name='Frequency Statistic Measure' />
+                  <column datatype='string' name='Source' />
+                  <column datatype='string' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='excel-direct.1isw03s14pp5x810oguew1bhs46j' name='simple list' table='[&apos;simple list$&apos;]' type='table'>
+                  <columns gridOrigin='A1:F51:no:A1:F51:0' header='yes' outcome='2'>
+                    <column datatype='string' name='Frequency Magnitude' ordinal='0' />
+                    <column datatype='string' name='Vibrations / cycles / waves / rate per second (formatted)' ordinal='1' />
+                    <column datatype='real' name='Frequency Value (Hz)' ordinal='2' />
+                    <column datatype='string' name='Description' ordinal='3' />
+                    <column datatype='string' name='Frequency Statistic Measure' ordinal='4' />
+                    <column datatype='string' name='Source' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.1isw03s14pp5x810oguew1bhs46j' name='simple list1' table='[&apos;simple list$&apos;]' type='table'>
+                  <columns gridOrigin='A1:F51:no:A1:F51:0' header='yes' outcome='2'>
+                    <column datatype='string' name='Frequency Magnitude' ordinal='0' />
+                    <column datatype='string' name='Vibrations / cycles / waves / rate per second (formatted)' ordinal='1' />
+                    <column datatype='real' name='Frequency Value (Hz)' ordinal='2' />
+                    <column datatype='string' name='Description' ordinal='3' />
+                    <column datatype='string' name='Frequency Statistic Measure' ordinal='4' />
+                    <column datatype='string' name='Source' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='simple list+ (Per Second)' name='federated.1hqkpdx0anwviv1awrjo10e54e8g' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Inner Circle' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='7.'>
+              <calculation class='tableau' formula='7.' />
+            </column>
+            <column caption='Outer Circle' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='15.'>
+              <calculation class='tableau' formula='15.' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1hqkpdx0anwviv1awrjo10e54e8g'>
+            <column caption='cf_rad normalised_R.stp 3' datatype='real' name='[Calculation_2752543846843867136]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 1] + IIF(&#13;&#10;    ATTR([Calculation_830069755841589254]) = 0, &#13;&#10;    0,(SUM([Calculation_830069755858366474]) / WINDOW_MAX(SUM([Calculation_830069755858366474]))) * ([Parameters].[Parameter 2] - [Parameters].[Parameter 1])&#13;&#10;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='cf_radial X' datatype='real' name='[Calculation_2752543846844448769]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_2752543846843867136]*COS([Calculation_830069755639271426])'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='cf_frequency cat.' datatype='string' name='[Calculation_2752543846918864902]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Description], &quot;Heart Rate&quot;) OR &#13;&#10;   CONTAINS([Description], &quot;Brain Waves&quot;) OR &#13;&#10;   CONTAINS([Description], &quot;Purr&quot;) OR &#13;&#10;   CONTAINS([Description], &quot;Human Hearing&quot;) OR&#13;&#10;   CONTAINS([Description], &quot;Dog&quot;) OR&#13;&#10;   CONTAINS([Description], &quot;Human Brain&quot;) OR&#13;&#10;   CONTAINS([Description], &quot;Speech&quot;) THEN &apos;Biological Frequencies&apos;&#13;&#10;   &#13;&#10;ELSEIF CONTAINS([Description], &quot;Frame Rate&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Music&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Power&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Bass&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Subwoofer&quot;) THEN &apos;Audio &amp; Power Frequencies&apos;&#13;&#10;   &#13;&#10;ELSEIF CONTAINS([Description], &quot;Bass&quot;) THEN &apos;Low Audio Frequencies&apos;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Music&quot;) OR CONTAINS([Description], &quot;Frame Rate&quot;) THEN &apos;High Audio Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;X-ray&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Gamma Rays&quot;) THEN &apos;Radiation Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Ultrasound&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;RFID&quot;) THEN &apos;Ultrasound Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Cosmic&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Wow Signal&quot;) THEN &apos;Cosmic Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;TV&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Broadcast&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Monitor&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;AM&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;FM&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Radio&quot;) THEN &apos;Broadcasting Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Microwave&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Bluetooth&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Wifi&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Wi-Fi&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;3G&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;4G&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;5G&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Air Traffic Control Radar&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;GPS&quot;) THEN &apos;Communication Frequencies&apos;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Infrared&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;UV&quot;) THEN &apos;Infrared / UV Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Visible&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Red&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Orange&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Yellow&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Green&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Cyan&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Blue&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Violet&quot;) THEN &apos;Visible Frequencies&apos;&#13;&#10;&#13;&#10;ELSE &apos;Other&apos;&#13;&#10;END' />
+            </column>
+            <column caption='cf_radial angle(rad)' datatype='real' name='[Calculation_830069755639271426]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='((INDEX() - 1) * (2 * PI()) / WINDOW_COUNT(COUNT([Calculation_830069755858366474])))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='cf_safety classification' datatype='string' name='[Calculation_830069755645992965]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_2752543846918864902] = &apos;Biological Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Audio &amp; Power Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Low Audio Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;High Audio Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Radiation Frequencies&apos; THEN &apos;Very High-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Ultrasound Frequencies&apos; THEN &apos;Moderate-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Cosmic Frequencies&apos; THEN &apos;Very High-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Broadcasting Frequencies&apos; THEN &apos;Moderate-Risk&apos;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Communication Frequencies&apos; THEN &apos;Moderate-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Infrared / UV Frequencies&apos; THEN &apos;High-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Visible Frequencies&apos; THEN &apos;High-Risk&apos;&#13;&#10;&#13;&#10;ELSE &apos;Other&apos;&#13;&#10;END' />
+            </column>
+            <column aggregation='Sum' caption='cf_path order_R.stp1' datatype='integer' name='[Calculation_830069755841589254]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IIF([Table Name]=&quot;simple list&quot;, 0,1)' />
+            </column>
+            <column caption='cf_log_scale' datatype='real' name='[Calculation_830069755845791752]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LOG([Frequency Value (Hz)],10)' />
+            </column>
+            <column caption='cf_radial field_R.stp2' datatype='real' name='[Calculation_830069755858366474]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_830069755845791752]' />
+            </column>
+            <column datatype='string' name='[Description]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Frequency Magnitude]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Frequency Value (Hz)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Source]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2752543846918864902]' derivation='Attribute' name='[attr:Calculation_2752543846918864902:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_830069755645992965]' derivation='Attribute' name='[attr:Calculation_830069755645992965:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Frequency Magnitude]' derivation='Attribute' name='[attr:Frequency Magnitude:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Frequency Value (Hz)]' derivation='Attribute' name='[attr:Frequency Value (Hz):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Source]' derivation='Attribute' name='[attr:Source:nk]' pivot='key' type='nominal' />
+            <column caption='cf-radial Y' datatype='real' name='[cf-radial X (copy)_2752543846844600322]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_2752543846843867136]*SIN([Calculation_830069755639271426])'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[Calculation_2752543846918864902]' derivation='None' name='[none:Calculation_2752543846918864902:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_830069755645992965]' derivation='None' name='[none:Calculation_830069755645992965:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_830069755841589254]' derivation='None' name='[none:Calculation_830069755841589254:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Description]' derivation='None' name='[none:Description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_830069755845791752]' derivation='Sum' name='[sum:Calculation_830069755845791752:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2752543846844448769]' derivation='User' name='[usr:Calculation_2752543846844448769:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[Description]' ordering-type='Field' />
+              <table-calc field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[Calculation_2752543846843867136]' ordering-field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[Description]' ordering-type='Field' />
+              <table-calc field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[Calculation_830069755639271426]' ordering-field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[Description]' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[cf-radial X (copy)_2752543846844600322]' derivation='User' name='[usr:cf-radial X (copy)_2752543846844600322:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[Description]' ordering-type='Field' />
+              <table-calc field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[Calculation_2752543846843867136]' ordering-field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[Description]' ordering-type='Field' />
+              <table-calc field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[Calculation_830069755639271426]' ordering-field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[Description]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]'>
+            <groupfilter function='level-members' level='[attr:Calculation_2752543846918864902:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Magnitude:nk]'>
+            <groupfilter function='level-members' level='[attr:Frequency Magnitude:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_2752543846918864902:nk]'>
+            <groupfilter function='level-members' level='[none:Calculation_2752543846918864902:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]'>
+            <groupfilter function='level-members' level='[none:Calculation_830069755645992965:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Magnitude:nk]</column>
+            <column>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]</column>
+            <column>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]</column>
+            <column>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_2752543846918864902:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]' field-type='quantitative' max='17.0' min='-17.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='1' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]' scope='cols' value='false' />
+            <encoding attr='space' class='0' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]' field-type='quantitative' max='17.0' min='-17.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[sum:Calculation_830069755845791752:qk]' num-steps='50' palette='Professional Blue' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='Frequency Safety'>
+              <formatted-text>
+                <run fontalignment='0' fontcolor='#ffffff'>Frequency Safety</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_2752543846918864902:nk]' value='Frequency Category'>
+              <formatted-text>
+                <run fontalignment='0' fontcolor='#ffffff'>Frequency Category</run>
+              </formatted-text>
+            </format>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]' value='#f5f5f5' />
+            <format attr='font-family' value='Tw Cen MT' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-width' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='0' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='none' />
+            <format attr='background-color' value='#00000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='#00000000' />
+            <format attr='font-weight' value='normal' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='#ffffff' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='#ffffff' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='11' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='8' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='normal' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_2752543846918864902:nk]' value='8' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_2752543846918864902:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-family' value='Tw Cen MT' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-family' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='Tw Cen MT' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='normal' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='12' />
+            <format attr='text-align' value='center' />
+            <format attr='font-size' value='12' />
+            <format attr='font-weight' value='normal' />
+            <format attr='color' value='#569ed9' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='#000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' value='center' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='data-highlighter'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='10' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='normal' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-family' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='Tw Cen MT' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='#5500ff' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='#00000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-width' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='0' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='none' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <style-rule element='data-highlighter-title'>
+            <format attr='title' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='Frequency Category'>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#569ed9' fontname='Tw Cen MT' fontsize='10'>Frequency Category</run>
+              </formatted-text>
+            </format>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-family' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='Tw Cen MT' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='#5500ff' />
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='center' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='normal' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Source:nk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Tw Cen MT' fontsize='12'>Frequency Name </run>
+                <run fontcolor='#1b1b1b' fontname='Tw Cen MT' fontsize='12'>|</run>
+                <run bold='true' fontcolor='#1b1b1b' fontname='Tw Cen MT' fontsize='12'><![CDATA[ <[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true' fontcolor='#898989' fontname='Tw Cen MT'>Frequency Category:</run>
+                <run bold='true' fontname='Tw Cen MT'><![CDATA[	<[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontname='Tw Cen MT'>Safety Classification</run>
+                <run bold='true' fontcolor='#555555' fontname='Tw Cen MT'>:&#9;</run>
+                <run bold='true' fontname='Tw Cen MT'><![CDATA[<[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontname='Tw Cen MT'>Frequency Value:&#9;</run>
+                <run bold='true' fontname='Tw Cen MT'><![CDATA[<[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='font-family' value='Tw Cen MT' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#898989' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2.9944751262664795' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-disallow' x-axis-name='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Source:nk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Magnitude:nk]' />
+              <text column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]' />
+              <color column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[sum:Calculation_830069755845791752:qk]' />
+              <path column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755841589254:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Tw Cen MT' fontsize='12'>Frequency Name </run>
+                <run fontcolor='#1b1b1b' fontname='Tw Cen MT' fontsize='12'>|</run>
+                <run bold='true' fontcolor='#1b1b1b' fontname='Tw Cen MT' fontsize='12'><![CDATA[ <[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true' fontcolor='#898989' fontname='Tw Cen MT'>Frequency Category:</run>
+                <run bold='true' fontname='Tw Cen MT'><![CDATA[	<[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontname='Tw Cen MT'>Safety Classification</run>
+                <run bold='true' fontcolor='#555555' fontname='Tw Cen MT'>:&#9;</run>
+                <run bold='true' fontname='Tw Cen MT'><![CDATA[<[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#898989' fontname='Tw Cen MT'>Frequency Value:&#9;</run>
+                <run bold='true' fontname='Tw Cen MT'><![CDATA[<[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-family' value='Tw Cen MT' />
+                <format attr='font-size' value='9' />
+                <format attr='font-weight' value='normal' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='3.922652006149292' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Source:nk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]' />
+              <tooltip column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' />
+              <lod column='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755841589254:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-size' value='8' />
+                <format attr='font-family' value='Tw Cen MT' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.38381215929985046' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#1b1b1b' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</rows>
+        <cols>([federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2] + [federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2])</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755841589254:ok]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[sum:Calculation_830069755845791752:qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Magnitude:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Source:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>&quot;Human Hearing Lower Limit&quot;</value>
+                <value>1.3010299956639813</value>
+                <value>&quot;Biological&quot;</value>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;Tens (10¹)&quot;</value>
+                <value>20.0</value>
+                <value>&quot;https://en.wikipedia.org/wiki/Hearing&quot;</value>
+                <value>-6.9389770470789829</value>
+                <value>2.747335365343075</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-88' y='12' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755841589254:ok]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[sum:Calculation_830069755845791752:qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Magnitude:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Source:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>&quot;Human Hearing Upper Limit&quot;</value>
+                <value>4.1461280356782382</value>
+                <value>&quot;Biological&quot;</value>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;Thousands (10³ )&quot;</value>
+                <value>14000.0</value>
+                <value>&quot;https://en.wikipedia.org/wiki/Orders_of_magnitude_(frequency)&quot;</value>
+                <value>-8.209400323493826</value>
+                <value>2.1078157478619177</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-79' y='-1' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755841589254:ok]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[sum:Calculation_830069755845791752:qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Magnitude:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Source:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>&quot;Human Hearing Upper Limit (Under 24 Yrs)&quot;</value>
+                <value>4.2405492482825995</value>
+                <value>&quot;Biological&quot;</value>
+                <value>&quot;Other&quot;</value>
+                <value>&quot;Thousands (10³ )&quot;</value>
+                <value>17400.0</value>
+                <value>&quot;https://en.wikipedia.org/wiki/Orders_of_magnitude_(frequency)&quot;</value>
+                <value>-8.4421872773123923</value>
+                <value>1.0664962714685193</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-103' y='-5' />
+          </mark-label>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755841589254:ok]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[sum:Calculation_830069755845791752:qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Magnitude:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Source:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>&quot;Human Heart Rate Rest&quot;</value>
+                <value>0.0</value>
+                <value>&quot;Biological&quot;</value>
+                <value>&quot;Low-Risk&quot;</value>
+                <value>&quot;Ones (10⁰)&quot;</value>
+                <value>1.0</value>
+                <value>&quot;https://en.wikipedia.org/wiki/Orders_of_magnitude_(frequency)&quot;</value>
+                <value>-7.0</value>
+                <value>8.5725275940314722e-16</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-80' y='-2' />
+          </mark-label>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755841589254:ok]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[sum:Calculation_830069755845791752:qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Magnitude:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Source:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>&quot;Human Speech&quot;</value>
+                <value>2.2304489213782741</value>
+                <value>&quot;Biological&quot;</value>
+                <value>&quot;Low-Risk&quot;</value>
+                <value>&quot;Hundreds (10²)&quot;</value>
+                <value>170.0</value>
+                <value>&quot;https://en.wikipedia.org/wiki/Voice_frequency&quot;</value>
+                <value>-7.7323988438776352</value>
+                <value>-0.9768291398444674</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-57' y='-4' />
+          </mark-label>
+          <mark-label id='5'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755841589254:ok]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[sum:Calculation_830069755845791752:qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_830069755645992965:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Magnitude:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Frequency Value (Hz):qk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Source:nk]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:Calculation_2752543846844448769:qk:2]</field>
+                  <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[usr:cf-radial X (copy)_2752543846844600322:qk:2]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>&quot; AC power (USA)&quot;</value>
+                <value>1.7781512503836436</value>
+                <value>&quot;Audio &amp; Power Frequencies&quot;</value>
+                <value>&quot;Low-Risk&quot;</value>
+                <value>&quot;Tens (10¹)&quot;</value>
+                <value>60.0</value>
+                <value>&quot;https://en.wikipedia.org/wiki/Gamma_wave&quot;</value>
+                <value>7.6328750840404975</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='66' y='-2' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{FC087040-466A-413A-9520-AB9579325D56}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='1000' maxwidth='1200' minheight='1000' minwidth='1200' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='simple list+ (Per Second)' name='federated.1hqkpdx0anwviv1awrjo10e54e8g' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1hqkpdx0anwviv1awrjo10e54e8g'>
+        <column caption='cf_frequency cat.' datatype='string' name='[Calculation_2752543846918864902]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF CONTAINS([Description], &quot;Heart Rate&quot;) OR &#13;&#10;   CONTAINS([Description], &quot;Brain Waves&quot;) OR &#13;&#10;   CONTAINS([Description], &quot;Purr&quot;) OR &#13;&#10;   CONTAINS([Description], &quot;Human Hearing&quot;) OR&#13;&#10;   CONTAINS([Description], &quot;Dog&quot;) OR&#13;&#10;   CONTAINS([Description], &quot;Human Brain&quot;) OR&#13;&#10;   CONTAINS([Description], &quot;Speech&quot;) THEN &apos;Biological Frequencies&apos;&#13;&#10;   &#13;&#10;ELSEIF CONTAINS([Description], &quot;Frame Rate&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Music&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Power&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Bass&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Subwoofer&quot;) THEN &apos;Audio &amp; Power Frequencies&apos;&#13;&#10;   &#13;&#10;ELSEIF CONTAINS([Description], &quot;Bass&quot;) THEN &apos;Low Audio Frequencies&apos;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Music&quot;) OR CONTAINS([Description], &quot;Frame Rate&quot;) THEN &apos;High Audio Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;X-ray&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Gamma Rays&quot;) THEN &apos;Radiation Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Ultrasound&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;RFID&quot;) THEN &apos;Ultrasound Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Cosmic&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Wow Signal&quot;) THEN &apos;Cosmic Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;TV&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Broadcast&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Monitor&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;AM&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;FM&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Radio&quot;) THEN &apos;Broadcasting Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Microwave&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Bluetooth&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Wifi&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Wi-Fi&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;3G&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;4G&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;5G&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Air Traffic Control Radar&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;GPS&quot;) THEN &apos;Communication Frequencies&apos;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Infrared&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;UV&quot;) THEN &apos;Infrared / UV Frequencies&apos;&#13;&#10;&#13;&#10;ELSEIF CONTAINS([Description], &quot;Visible&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Red&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Orange&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Yellow&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Green&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Cyan&quot;) OR&#13;&#10;       CONTAINS([Description], &quot;Blue&quot;) OR &#13;&#10;       CONTAINS([Description], &quot;Violet&quot;) THEN &apos;Visible Frequencies&apos;&#13;&#10;&#13;&#10;ELSE &apos;Other&apos;&#13;&#10;END' />
+        </column>
+        <column caption='cf_safety classification' datatype='string' name='[Calculation_830069755645992965]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [Calculation_2752543846918864902] = &apos;Biological Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Audio &amp; Power Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Low Audio Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;High Audio Frequencies&apos; THEN &apos;Low-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Radiation Frequencies&apos; THEN &apos;Very High-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Ultrasound Frequencies&apos; THEN &apos;Moderate-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Cosmic Frequencies&apos; THEN &apos;Very High-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Broadcasting Frequencies&apos; THEN &apos;Moderate-Risk&apos;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Communication Frequencies&apos; THEN &apos;Moderate-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Infrared / UV Frequencies&apos; THEN &apos;High-Risk&apos;&#13;&#10;&#13;&#10;ELSEIF [Calculation_2752543846918864902] = &apos;Visible Frequencies&apos; THEN &apos;High-Risk&apos;&#13;&#10;&#13;&#10;ELSE &apos;Other&apos;&#13;&#10;END' />
+        </column>
+        <column-instance column='[Calculation_2752543846918864902]' derivation='None' name='[none:Calculation_2752543846918864902:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_830069755645992965]' derivation='None' name='[none:Calculation_830069755645992965:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='16' param='C:/Users/harma/Downloads/abstract-motion-wave-line-gradient-line-background-vector-design/sound_motion_wave_9.jpg' type-v2='bitmap' w='100000' x='0' y='0'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='0' />
+          </zone-style>
+        </zone>
+        <zone h='98182' id='18' param='vert' type-v2='layout-flow' w='98000' x='1000' y='909'>
+          <zone h='7400' id='19' param='vert' type-v2='layout-flow' w='98000' x='1000' y='909'>
+            <zone forceUpdate='true' h='7400' id='24' type-v2='text' w='98000' x='1000' y='909'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT' fontsize='36'>Per Second: The Frequency World Around Us</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone fixed-size='24' h='3200' id='39' is-fixed='true' type-v2='empty' w='98000' x='1000' y='8309'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='87582' id='29' param='horz' type-v2='layout-flow' w='98000' x='1000' y='11509'>
+            <zone fixed-size='196' h='87582' id='31' is-fixed='true' param='vert' type-v2='layout-flow' w='16333' x='1000' y='11509'>
+              <zone fixed-size='34' h='4200' id='41' is-fixed='true' type-v2='empty' w='16333' x='1000' y='11509'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='163' h='17100' id='21' is-fixed='true' mode='radiolist' name='Sheet 1' param='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' type-v2='filter' values='database' w='16333' x='1000' y='15709'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='28' h='3600' id='32' is-fixed='true' type-v2='empty' w='16333' x='1000' y='32809'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='25000' id='37' mode='radiolist' name='Sheet 1' param='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_2752543846918864902:nk]' type-v2='filter' values='database' w='16333' x='1000' y='36409'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='87582' id='6' name='Sheet 1' show-title='false' w='81667' x='17333' y='11509'>
+              <layout-cache minheight='100' minwidth='100' type-h='scalable' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='55' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='54' param='vert' type-v2='layout-flow' w='98666' x='667' y='800'>
+                <zone fixed-size='280' h='100000' id='16' is-fixed='true' param='C:/Users/harma/Downloads/abstract-motion-wave-line-gradient-line-background-vector-design/sound_motion_wave_9.jpg' type-v2='bitmap' w='100000' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='7400' id='24' type-v2='text' w='98000' x='1000' y='909'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tw Cen MT' fontsize='36'>Per Second: The Frequency World Around Us</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='163' h='17100' id='21' mode='dropdown' name='Sheet 1' param='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' type-v2='filter' values='database' w='16333' x='1000' y='15709'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='25000' id='37' mode='dropdown' name='Sheet 1' param='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_2752543846918864902:nk]' type-v2='filter' values='database' w='16333' x='1000' y='36409'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='87582' id='6' is-fixed='true' name='Sheet 1' show-title='false' w='81667' x='17333' y='11509'>
+                  <layout-cache minheight='100' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D0A2198D-459D-467C-A025-1D0E26BB64D3}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[attr:Calculation_2752543846918864902:nk]' type='highlight'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{66661F74-98B5-45D0-B15F-A37A49CD1016}' />
+    </window>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='232'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]' type='filter' />
+            <card param='[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_2752543846918864902:nk]' type='filter' />
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 2]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755641057284:nk]</field>
+            <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755645992965:nk]</field>
+            <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Calculation_830069755841589254:ok]</field>
+            <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Description:nk]</field>
+            <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Frequency Magnitude:nk]</field>
+            <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:Source:nk]</field>
+            <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[none:cf_path order_R.stp1 (copy)_2752543846934253577:ok]</field>
+            <field>[federated.1hqkpdx0anwviv1awrjo10e54e8g].[sum:Calculation_830069755845791752:qk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{3ECD3C5B-1B4E-4815-AEBA-F559AC79CA86}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nOydd3wcxfn/37NXpFPvsopVLNmy3GQb9wo23aZ3Qgoh4ZdGSEhICGkkpELK
+      l/RASCGBUBKqTcAGjAGDbTDuTW5yUe9durvd+f2xXSc3cAF0H16Abnfazs7Tn5kVUkpJFFEM
+      UXgBsjLKT/c4oojitEA53QOIIorTiSgBRDGkESWAKIY0ogQQxZCG93grXHLt9YwqSLV+1x2s
+      4qmnXqSrL3xCBhRISueLX7mZGZPK6Oto4bn/PsVjz75+Qto+Ebjsxpv5xKWzeeAXP+X513cc
+      seyk2fM5e/a4Qe708Yd7HmTx57/EtedPPaa2joZB++pt5d7fPvK+2v0wQgRS+eot19PbcIA/
+      /v05AOIz8vjCpy/lmUceofJQKwAXXHHVeyCA6z7G4tkjXNe+/PlrOe+8T9HSq76/kSt+/vL4
+      PzhnSol16Zxzz+TQ3otYtaX6/bV9gpBXPILZs6ex5O+JRy07efaZ3P6Nawe508o/7nmQgpKR
+      x9zWe+qrZe+QJADZ28HiT9zEmOQuHnv4OVpCMH3BOdz+jS/had3Hzx54HvBw+13fOn4CMPHn
+      e37M6t3d/PTe71M4Zgofu2wuv33k1fc18KLJszlnSgndDXuZOetqKhYuIkc0fGAW//Hi3VWv
+      cu89TeSUlHPDFQvpqNvPnx96Duij+yT1WblhLc8sW6v/6G09Sb180KGyZvUmxl06nSkT8lm2
+      7hCzZk8DYNbsqfDA8yQVjqU8J/DeCaBq106WPvU2Z118OZ9YPIW8nBzr3oTpM1kwZyK9bc08
+      /eRS6lv11z120iSS4xR2763jvDnj+OcTL7raTEw0OaEAqfLifx+P6PdwbQPkFI7gkosXEitU
+      Vix7iY07DgDgjY3noksuoKQgiwO7d/L0My8T1PQ6eUUjKMxLZ29lJeNmzGPCyBye/+/T7Njf
+      YLU7afY8Fswcy4531x7XHK1ftZL1q1Yy+bzLueGKhXTW7+fee34fUU4oXhZdeQVlBWk8/+Sz
+      7Kiqt+6VjJnAhefOQga7WPL081TVtByxz8oNayP6GDa8kBEFWezfs48551/Ay0/8k6ZuyC8Z
+      xcWLzsQng7zw3P/Y6eh3xJgJXHzBbGp2b+Plt3ZSNnI4dQf2s/dgA0UjR5GblczubdtoaO0m
+      KSOLcWWFNNdVs3NPjf4uikq4ZPECYhWV5c+/wNbd+nWzbGP1QWKzRnDOvAreWbmC1962VcCE
+      1Awuu+wCslLj2LhmNS+9sZGJU6cQ5xdsfGcd3f36yysoKSV/WCp7d+ygrrnT9cxr17zLTZdO
+      Z/r0M1i2roY5c6YAMHnmNGIFTJs1BQ+AlFJmpo8+5n+fe2OPlFLK++/9ibzx5u/Ipq6glFLK
+      W667Smamj5bf/fXjUpOa3LF5k6xr6pBt9QfkgilzZWb6aPlGZYuUsl9u3bJXVr7xYkTbOUVz
+      5aHWPimllM11h+T//eRncnTxROv+kdo++/Ivy47ekDTRXLlGZqaPloUjz5LrdlZLJza98ZIc
+      kTtGZqaPlj/4/dNSSikPHDho3e+oPyAnlkyQmemj5Se+/EsZ1sw7mjx0qFZKKeUdn/m43u/i
+      z8i7v/djWTp8/GHn7Lzr75RSSnlow0rX9Xv+9qKUUsrq6hqr766mg3JCsd7WTV/7PxlSNbmv
+      cqesqm6SfZ0t8trzFw3axx0//7eUUsqd69fIe37+W/3fu37ourd16w4ppZTzykfLqz79fdkT
+      VOWhfXvkrqpaGerrkp+75lqZmT5annvlV2V3ULWeeePGLVJKKf/+87tlZvpo+YfHVkoppbz1
+      ev2dX/KZu6WUUj73t9/KzPTR8qLrvym7+sKydv8+uXNvtVSDPfIrn/iEq+yhA4esedWCPfKq
+      s8+TmemjZfmki+SemjbH2+qVUwtHy1/+fZmUUspf3nGb/sxZE+WG/a1S7WuXM0dPipiPirNu
+      klJKuXrJY7K44goZklJW7T8opdTkZXPmyPv+9bKUUsr37AX67Ne/xV//fDfp8T5WLX2c/y7f
+      TN7YmXzv1qt4/cl/MffMq1m46PMEModz749vddT04w038/dHX4hoM9zZyPXXfo5X3txMSlYe
+      t37rm6x640lKc5KO0raHH/38eyTGenn2n3/lyis/y/0P6+1/7uu3MXlULm+++AxXX3Uzr76z
+      i/GzF/KlT17g6lttr+Nj132eTXsbSMwazuJzpoIvkR/e9UU8QvLAvT/js1/8IfFpGa569/7h
+      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
+      F0FXkWGHVkCpAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
