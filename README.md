@@ -26,7 +26,7 @@ For more details, visit the official **[Makeover Monday website](https://www.mak
 ## 📬 Connect With Me
 If you have feedback or would like to know more about the visualizations, feel free to connect on:
 
-🔗 LinkedIn: [your-linkedin-profile](https://www.linkedin.com/in/your-profile)
+🔗 LinkedIn: [linkedin-profile](https://www.linkedin.com/in/harmandeep/)
 
 💡 *Feel free to star ⭐ this repository if you find my work helpful!*
 
